@@ -7,5 +7,7 @@ consul agent -dev
 3.Try to access serviceAPI1 & serviceAPI2 using API gateway baseurl
 
 http://localhost:15203/api/Test/APIGateway
+
 http://localhost:15203/ServiceAPI1/api/Test/GetTestData1
+
 http://localhost:15203/ServiceAPI2/api/Test/GetTestData2
