@@ -1,0 +1,37 @@
+{
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44321
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Test/GetTestData1",
+      "UpstreamPathTemplate": "/Test/GetTestData1",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamScheme": "https",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44322
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Test/GetTestData2",
+      "UpstreamPathTemplate": "/Test/GetTestData2",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "DownstreamScheme": "https",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44323"
+  }
+}
